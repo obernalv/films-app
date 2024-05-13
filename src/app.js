@@ -5,8 +5,12 @@ const router = require('./routes');
 const errorHandler = require('./utils/errorHandler');
 require('dotenv').config();
 
+require('./models');
+
 // Esta es nuestra aplicación
 const app = express();
+
+
 
 // Middlewares 
 app.use(express.json());
